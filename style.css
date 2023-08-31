@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1480px;
+}
+.container a{
+    color: white;
+}
+.container a:hover{
+    animation: underline 1s alternate;
+}
+.container>.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #091242;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    min-height: 100px;
+}
+.container>.nav>.info{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container>.nav>.info>div{
+    display: flex;
+    gap: 10px;
+}
+.container>.nav>.info>.box-1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container>.nav>.info>.box-2>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container>.nav>.info>.box-3>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container>.main-1{
+    display: flex;
+    flex-direction: column;
+    background-image: url("./img/Photo.png");
+    object-fit: cover;
+    position: relative;
+}
+.container>.main-1>.main-topbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.459);
+    min-height: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container>.main-1>.main-topbar>.pages{
+    display: flex;
+    gap: 30px;
+    color: white;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container>.main-1>.main-topbar>.pages>.box-1>a{
+    color: white;
+}
+.container>.main-1>.main-topbar>.websites{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container>.main-1>.main-topbar>.websites>.request{
+    background-color: white;
+    max-width: 150px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container>.main-1>.main-textcontent{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    color: white;
+    min-height: 600px;
+    padding: 15px;
+}
+.container>.main-1>.main-textcontent>div{
+    padding-top: 18%;
+    padding-left: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container>.main-1>.main-textcontent>div>.div-1{
+    background-color: rgba(0, 0, 0, 0.315);
+    max-width: max-content;
+    border-left: 2px solid #FFBE34;
+    
+}
+.container>.main-1>.main-textcontent>div>h1{
+    font-size: 34px
+}
+.container>.main-1>.main-textcontent>div>.explore{
+    width: 150px;
+    height: 50px;
+    background-color: #FFBE34;
+    font-weight: 500;
+    border: none;
+}
+.container>.main-1>.main-textcontent>div>.explore:hover{
+    animation: sizechange 1s alternate;
+    font-weight: 500;
+}
+.container>.main-2>.text-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.container>.main-2>.text-content>.somediv{
+    max-width: 300px;
+}
+.container>.main-2>.text-content>.somediv>div{
+    background-color: rgba(0, 0, 0, 0.164);
+    max-width: 100px;
+    border-left:2px solid #FFBE34 ;
+    display: flex;
+    justify-content: center;
+}
+.container>.main-2>.text-content>.services{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 640px); */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px;
+}
+.container>.main-2>.text-content>.services>.box{
+    display: flex;
+    gap: 10px;
+    max-width: 300px;
+    font-size: small;
+    align-items: center;
+}
+.container>.main-2>.text-content>.services>.box>div>h1{
+    font-weight: 450;
+    font-size: 20px;
+}
+.container>.main-2>.text-content>.services>.box>div>p{
+    color: grey;
+}
+.container>.background-container{
+    background-image:linear-gradient(to top,#091242, transparent ), url(./img/Photo\ \(1\).png);
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+}
+.container>.main-3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container>.main-3>img{
+    height: 250px;
+    /* background-image: linear-gradient(to top, #1C1F35, transparent) */
+    /* z-index: -1; */
+}
+.container>.main-3>.somediv{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white; 
+    padding: 30px;
+    max-width: 1000px;
+    /* z-index: 3; */
+    margin: auto; 
+    margin-top: -200px;
+}
+.container>.main-3>.somediv>.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+.container>.main-3>.somediv>.text-content>.why{
+    background-color: rgba(0, 0, 0, 0.164);
+    border-left: #FFBE34 3px solid;
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}
+.container>.main-3>.somediv>.text-content>p{
+    color: grey;
+}
+.container>.main-3>.somediv>.text-content>.box-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container>.main-3>.somediv>.text-content>.box-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container>.main-3>.somediv>.images{
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+}
+.container>.main-3>.somediv>.images>.plane{
+    width: 300px;
+    height: 300px;
+}
+.container>.main-3>.somediv>.images>.plane>img{
+    width: 100%;
+}
+.container>.main-3>.somediv>.images>.employee{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    right: 120px;   
+}
+.container>.main-3>.somediv>.images>.employee>img{
+    width: 100%;
+}
+.container>.main-stats{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100px;
+    justify-content: center;
+}
+.container>.main-stats>.stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 70px;
+}
+.container>.main-stats>.stats>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container>.main-4{
+    display: flex;
+    flex-direction: column;
+}
+.container>.main-4>.transport-services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.container>.main-4>.transport-services>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container>.main-4>.transport-services>div>.box-1{
+    background-image:linear-gradient(to top, #091242, transparent), url(./img/Photo\ \(11\).png);
+}
+.container>.main-4>.transport-services>div>.box-2{
+    background-image:linear-gradient(to top, #091242, transparent), url(./img/Photo\ \(12\).png);
+}
+.container>.main-4>.transport-services>div>.box-3{
+    background-image:linear-gradient(to top, #091242, transparent), url(./img/Photo\ \(13\).png);
+}
+.container>.main-4>.transport-services>div>.box-4{
+    background-image:linear-gradient(to top, #091242, transparent), url(./img/Photo\ \(14\).png);
+}
+.container>.main-4>.transport-services>div>.box-5{
+    background-image:linear-gradient(to top, #091242, transparent), url(./img/Photo\ \(15\).png);
+}
+.container>.main-4>.transport-services>div>div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 230px;
+    height: 300px;
+
+}
+.container>.main-4>.transport-services>div>div>p{
+    color: #FFB629;
+}
+.container>.main-4>.yellow-back{
+    background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+    width: 100%;
+    height: 200px;
+}
+.container>.main-5{
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+.container>.main-5>.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.container>.main-5>.content>.div-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container>.main-5>.content>.div-1>.box-1{
+    display: flex;
+    flex-direction: column;
+}
+.container>.main-5>.content>.div-1>.box-1>div{
+    background-color: rgba(0, 0, 0, 0.356);
+    border-left: #FFB629 3px solid;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+.container>.main-5>.content>.div-1>.box-1>h1{
+    color: #091242;
+}
+.container>.main-5>.content>.div-1>.box-2{
+    display: flex;
+    gap: 5px;
+}
+.container>.main-5>.content>.div-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container>.main-5>.content>.div-2>.box-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+.container>.main-5>.content>.div-2>.box-1>.somediv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container>.main-5>.content>.div-2>.box-1>.somediv>.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container>.main-5>.content>.div-2>.box-1>.somediv>.profile>.photo>img{
+    border-radius: 50%;
+}
+.container>.main-5>.content>.div-2>.box-1>.text-content{
+    color: gray;
+}
+.container>.main-5>.content>.div-2>.box-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+    background-color: #091242;
+    padding: 20px;
+}
+.container>.main-5>.content>.div-2>.box-2>.somediv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container>.main-5>.content>.div-2>.box-2>.somediv>.profile{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+.container>.main-5>.content>.div-2>.box-2>.somediv>.profile>.photo>img{
+    border-radius: 50%;
+}
+.container>.main-5>.content>.div-2>.box-2>.text-content{
+    color: white;
+}
+.container>.main-6{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container>.main-6>.img-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091242;
+    min-width: 300px;
+    width: 55%;
+    height: 600px;
+}
+.container>.main-6>.img-content>.plane-img{
+    background-image: url(./img/Photo\ \(16\).png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 500px;
+    height: 400px;
+    flex-shrink: 1 500px;
+}
+.container>.main-6>.img-content>.plane-img>div{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+    padding: 10px;
+    gap: 10PX;
+    font-weight: 500;
+}
+.container>.main-6>.text-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    justify-content: center;
+    /* max-width: 600px; */
+    width: 45%;
+    min-width: 300px;
+}
+.container>.main-6>.text-content>.why{
+    background-color: rgba(0, 0, 0, 0.164);
+    border-left: 3px solid #FFB629;
+    max-width: max-content;
+}
+.container>.main-6>.text-content>h1{
+    max-width: 400px;
+    color: #091242;
+}
+.container>.main-6>.text-content>p{
+    max-width: 400px;
+    color: grey;
+}
+.container>.main-6>.text-content>.advantages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.container>.main-6>.text-content>.advantages>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container>.main-7{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+.container>.main-7>.transporters{
+    background-color: rgba(0, 0, 0, 0.164);
+    display: flex;
+    justify-content: center;
+    border-left: #FFB629 3px solid;
+
+}
+.container>.main-7>.employees{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container>.main-7>.employees>div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.container>.main-7>.employees>div>div{
+    background-color: #091242;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    color: #F4F4F4;
+}
+.container>.main-8{
+    background-color: #091242;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 500px;
+}
+.container>.main-8>.text-input{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.container>.main-8>.text-input>.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    max-width: 320px;
+}
+.container>.main-8>.text-input>.text-content>.cont{
+    background-color: rgba(128, 128, 128, 0.459);
+    border-left: #FFB629 3px solid;
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+}
+.container>.main-8>.text-input>.text-content>div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container>.main-8>.text-input>.text-content>div>span>span{
+    display: flex;
+    flex-direction: column;
+
+}
+.container>.main-8>.text-input>.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.container>.main-8>.text-input>.inputs>.multi-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+     width: 100%; 
+}
+.container>.main-8>.text-input>.inputs>.multi-input>input{
+    /* max-width: 250px; */
+    height: 50px;
+    background-color: #091242;
+    border: 2px solid grey;
+    padding-left: 20px;
+    color: white;
+}
+.container>.main-8>.text-input>.inputs>.message{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.container>.main-8>.text-input>.inputs>.message>.your-m{
+background-color: #091242;
+border: 2px solid grey;
+width: 100%;
+height: 200px;
+color: white;
+}
+.container>.main-8>.text-input>.inputs>.message>button{
+    width: 150px;
+    height: 40px;
+    background-color: #FFB629;
+    border: none;
+    font-weight: 500;
+}
+.container>.main-8>.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container>.main-8>.images>div{
+    width: 250px;
+    height: 250px;
+}
+.container>.main-8>.images>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container>.footer{
+    background-color: #091242;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.container>.footer>.topbar{
+    color: white;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    min-height: 80px;
+    flex-wrap: wrap;
+}
+.container>.footer>.topbar>div{
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
+.container>.footer>.topbar>.box-1{
+    background-color: #091242;
+}
+.container>.footer>.topbar>.box-2{
+    width: 70px;
+}
+.container>.footer>.topbar>.box-3{
+    width: 70px;
+}
+.container>.footer>.topbar>.box-4{
+    width: 70px;
+}
+.container>.footer>.info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 20px;
+    font-size: small;
+}
+.container>.footer>.info>.box-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 15px;
+}
+.container>.footer>.info>.box-1>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container>.footer>.info>.box-1>div>.span{
+    display: flex;
+    flex-direction: column;
+}
+.container>.footer>.info>.box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container>.footer>.info>.box-2>a{
+    color: white;
+    text-decoration: none;
+}
+.container>.footer>.info>.box-2>a:hover{
+    animation: underline 1s alternate;
+}
+.container>.footer>.info>.box-3>form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.container>.footer>.info>.box-3>form>#email{
+    background-color: #091242;
+    border: 1px solid grey;
+    display: flex;
+    height: 40px;
+    padding-left: 10px;
+    width: 250px;
+}
+.container>.footer>.info>.box-3>form>.submit{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border: none;
+    background-color: #ffbe34;
+    font-weight: 500;
+    height: 40px;
+}
+.container>.footer>.info>.box-3>form>.submit:hover{
+    animation: sizechange 1s alternate;
+}
+.container>.footer>.fter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid grey;
+    color: white;
+    min-height: 50px;
+    align-items: center;
+}
+.container>.footer>.fter>.pages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container>.footer>.fter>.pages>a{
+    color: grey;
+    text-decoration: none;
+}
+.container>.footer>.fter>.pages>a:hover{
+    animation: underline 1s alternate;
+}
+@keyframes sizechange{
+    from{
+        width: 150px;
+        height: 50px;
+    }
+    to{
+        width: 170px;
+        height: 60px;
+    }
+}
+@keyframes underline{
+    from{
+        color: white;
+        text-decoration: none;
+    }
+    to{
+        text-decoration: underline;
+        font-size: large;
+    }
+}
+
+@media screen and   (max-width:600px){
+    .container>.main-8>.text-input>.inputs>.multi-input{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
